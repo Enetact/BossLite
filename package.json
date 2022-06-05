@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "npm run dev",
-    "dev": "npm-run-all dev:client:build dev:server:prepare dev:server:build dev:server:delay",
+    "dev": "run-p dev:client:build dev:server:prepare dev:server:build dev:server:delay",
     "dev:server:prepare": "universal-webpack --settings ./webpack/universal-webpack-settings.json prepare",
     "dev:server:build": "webpack --config ./webpack/webpack.config.server.development.babel.js --watch --colors --display-error-details",
     "dev:server:delay": "run-s delay dev:server:start",
