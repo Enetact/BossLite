@@ -1,6 +1,6 @@
 export default {
   development: {
-    isProd: True
+    isProd: false
   },
   production: {
     isProd: true
